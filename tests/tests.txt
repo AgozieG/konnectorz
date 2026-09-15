@@ -1,0 +1,73 @@
+# Tests
+
+## Test 1 - Discover listings and apply detailed filters [sanity]
+Viewport: mobile
+Covers: dedicated listings route, compact search, filter drawer, location, purpose, property type, bedrooms, bathrooms, toilets, budget, furnishing, amenities, dynamic result count
+Description: Verifies that the main property-discovery workflow is moved off the homepage and that the detailed search controls work together on mobile.
+
+Steps:
+1. Open the Listings page from the Home page's "Browse properties" action
+2. Confirm the page shows a compact search field and a "Search & filter" control rather than a large homepage filter panel
+3. Open "Search & filter"
+4. Set Purpose to "For Sale", Location to "GRA", Property type to "Detached House", Bedrooms to "4+", Bathrooms to "4+", and Toilets to "5+"
+5. Select the "Furnished" furnishing option
+6. Select the "Pool" feature
+7. Close the filter drawer with "Show properties"
+
+Expected: The Listings page remains compact, the filter drawer closes, and the visible property collection and result count reflect the active criteria.
+
+## Test 2 - Open a property and browse its multi-image gallery
+Viewport: mobile
+Covers: property-detail route, multiple property images, slideshow next/previous controls, thumbnail selection, image counter, property specifications, enquiry CTA
+Description: Verifies that a property has its own detail page and that multiple photos can be browsed from different directions.
+
+Steps:
+1. From Listings, open the "Details" action on a property card
+2. Confirm the property detail page shows a large property image, an image counter, and thumbnail images when multiple photos exist
+3. Tap the next-photo control
+4. Tap a different thumbnail
+5. Review the bedrooms, bathrooms, toilets, parking and land-area specifications
+6. Confirm the WhatsApp enquiry and inspection actions are visible
+
+Expected: The displayed image changes as the slideshow controls or thumbnail are used, the counter updates, and the property information and enquiry actions remain visible.
+
+## Test 3 - Switch themes and verify readable UI across pages
+Viewport: mobile
+Covers: light/dark theme toggle, theme contrast, navigation, cards, filter controls, property detail UI
+Description: Verifies that theme changes apply consistently without invisible text or controls.
+
+Steps:
+1. Open the Listings page
+2. Toggle from the default light theme to dark theme
+3. Open the filter drawer and inspect labels, inputs, selects, chips and buttons
+4. Close the drawer and open a property detail page
+5. Toggle back to light theme
+
+Expected: Text, controls, borders, surfaces, prices and navigation remain readable in both themes on Listings and Property Detail pages.
+
+## Test 4 - Recover from an empty search and reset filters
+Viewport: desktop
+Covers: keyword search, empty-state guardrail, reset filters, recovery to property collection
+Description: Verifies that an overly specific search produces a useful empty state and that Reset restores the catalogue.
+
+Steps:
+1. Open the Listings page
+2. Enter "castle on mars" into the compact search
+3. Confirm the no-results state is displayed
+4. Select "Reset search"
+
+Expected: The empty state explains that no properties match, and Reset clears the search and restores the property collection.
+
+## Test 5 - Navigate dedicated pages from the mobile menu
+Viewport: mobile
+Covers: responsive navigation, dedicated Services route, Locations route, About route, Contact route
+Description: Verifies that important real-estate information is separated into its own pages and remains reachable on mobile.
+
+Steps:
+1. Open the mobile navigation menu
+2. Open Services and confirm a dedicated services page appears
+3. Open Locations and select an Enugu location
+4. Confirm Listings opens with that location selected
+5. Open the mobile menu again and open Contact
+
+Expected: Each important section has its own route, and selecting a location takes the user back to Listings with the selected location applied.
