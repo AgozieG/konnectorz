@@ -6,7 +6,7 @@ import {
   Sparkles, Sun, Toilet, X,
 } from 'lucide-react';
 
-const LOGO = '/resources/logo.png';
+const LOGO = `${import.meta.env.BASE_URL}resources/kz.PNG`;
 
 const properties = [
   { id: 1, title: 'Contemporary 5 Bedroom Detached Duplex', location: 'Independence Layout, Enugu', type: 'Duplex', status: 'For Sale', price: 185000000, beds: 5, baths: 6, toilets: 7, parking: 3, area: 620, tag: 'Featured', furnished: false, features: ['BQ', 'Fitted Kitchen', 'Security', 'Water Supply', 'C of O'], images: ['https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=90','https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=90','https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=90','https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=90'] },
