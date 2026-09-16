@@ -45,3 +45,11 @@ The property records and photos in this frontend are demonstration content. Repl
 The site is frontend-only. WhatsApp and phone buttons are direct client-side links.
 
 The supplied KonnectorZ logo is included at `public/resources/logo.png`.
+
+## GitHub Pages
+
+Deployment is configured through `.github/workflows/deploy-pages.yml`. In the
+repository settings, set **Pages > Build and deployment > Source** to
+**GitHub Actions**. Every push to `main` then builds the Vite app and deploys
+the generated `dist` directory, including the `/konnectorz/` project-page base
+path.
