@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  // Use project basename for GitHub Pages (project page): assets will be referenced under /konnectorz/
+  base: process.env.VITE_BASE || '/konnectorz/',
   build: {
     outDir: process.env.APPDEPLOY_VITE_OUT_DIR || 'dist',
     sourcemap:
